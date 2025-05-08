@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Arrowverse - Services</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+  * {
+    margin: 0; padding: 0; box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding: 1rem 2rem;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: default;
+    color: #fff;
+  }
+  nav a {
+    color: #fff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: #fff;
+    outline: none;
+    text-decoration: underline;
+  }
+  main {
+    max-width: 820px;
+    margin: 3rem auto 4rem auto;
+    padding: 0 1rem;
+    flex: 1;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    text-shadow: none;
+    color: #fff;
+  }
+  .services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  .service-item {
+    background: rgba(255,255,255,0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(255,255,255,0.15);
+    transition: background 0.3s ease;
+  }
+  .service-item:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+  .service-item h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.7rem;
+    font-weight: 700;
+    color: #ff6f91;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+  }
+  .service-item p {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #fff;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    padding: 1em 0;
+    background: #111;
+    user-select: none;
+  }
+  @media (max-width: 600px) {
+    main {
+      margin: 2rem 1rem 3rem 1rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    .service-item h3 {
+      font-size: 1.2rem;
+    }
+    .service-item p {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="background-shapes" aria-hidden="true" style="position: fixed; top:0; left:0; width:100vw; height:100vh; overflow:hidden; z-index:-1;">
+    <div style="position:absolute; border-radius:50%; width:350px; height:350px; background:#fff; top:15%; left:10%; filter: blur(40px); opacity: 0.3; animation: float 8s ease-in-out infinite;"></div>
+    <div style="position:absolute; border-radius:50%; width:300px; height:300px; background:#fff; top:55%; right:15%; filter: blur(40px); opacity: 0.3; animation: float 8s ease-in-out infinite; animation-delay: 3s;"></div>
+    <div style="position:absolute; border-radius:50%; width:250px; height:250px; background:#fff; top:30%; right:35%; filter: blur(40px); opacity: 0.3; animation: float 8s ease-in-out infinite; animation-delay: 6s;"></div>
+  </div>
+
+  <header>
+    <h1>Arrowverse</h1>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="services.html" aria-current="page">Services</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main role="main" tabindex="-1">
+    <h2>Our Services</h2>
+    <div class="services-list" aria-label="List of digital marketing services">
+      <a href="https://google.com" style="text-decoration: none;"><article class="service-item">
+        <h3>Search Engine Optimization (SEO)</h3>
+        <p>Boost your website’s visibility in search engine results with targeted SEO strategies optimized for long-term success.</p>
+      </article></a>
+      <article class="service-item">
+        <h3>Content Marketing</h3>
+        <p>Create engaging content that drives brand awareness, nurtures customer relationships, and promotes your products effectively.</p>
+      </article>
+      <article class="service-item">
+        <h3>Social Media Management</h3>
+        <p>Manage your social presence across platforms to maximize customer engagement, build communities, and increase brand loyalty.</p>
+      </article>
+      <article class="service-item">
+        <h3>Pay-Per-Click Advertising (PPC)</h3>
+        <p>Reach your target audience quickly with expertly crafted PPC campaigns that deliver measurable results.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    &copy; <span id="year"></span> Our Digital Marketing Company. All rights reserved.
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const floatAnim = `
+    @keyframes float {
+      0%, 100% { transform: translateY(0) translateX(0); }
+      50% { transform: translateY(-25px) translateX(25px); }
+    }
+  `;
+
+  const styleSheet = document.createElement("style");
+  styleSheet.type = "text/css";
+  styleSheet.innerText = floatAnim;
+  document.head.appendChild(styleSheet);
+</script>
+</body>
+</html>

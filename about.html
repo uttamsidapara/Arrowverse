@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Arrowverse - About Us</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    padding: 1rem 2rem;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.1);
+  }
+  header h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: default;
+    color: #fff;
+  }
+  nav a {
+    color: #fff;
+    margin-left: 1.5rem;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  nav a:hover,
+  nav a:focus {
+    color: #fff;
+    outline: none;
+    text-decoration: underline;
+  }
+  main {
+    max-width: 800px;
+    margin: 3rem auto 4rem auto;
+    padding: 0 1rem;
+    text-align: center;
+    flex: 1;
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+    text-shadow: none;
+    color: #fff;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-shadow: none;
+  }
+  p {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 1.75;
+    margin-bottom: 1.8rem;
+    color: #fff;
+  }
+  ul {
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2.5rem;
+    color: #eee;
+  }
+  ul li {
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+    font-size: 1.1rem;
+  }
+  .team-photo {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 8px 15px rgba(255,255,255,0.3);
+    margin: 2rem auto 3rem auto;
+    display: block;
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.7);
+    padding: 1em 0;
+    background: #111;
+    user-select: none;
+  }
+  @media (max-width: 600px) {
+    main {
+      margin: 2rem 1rem 3rem 1rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+    ul {
+      font-size: 1rem;
+      max-width: 100%;
+      padding-left: 1.2rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <div class="background-shapes" aria-hidden="true" style="position: fixed; top:0; left:0; width:100vw; height:100vh; overflow:hidden; z-index:-1;">
+    <div style="position:absolute; border-radius:50%; width:350px; height:350px; background:#fff; top:15%; left:10%; filter: blur(40px); opacity: 0.3; animation: float 8s ease-in-out infinite;"></div>
+    <div style="position:absolute; border-radius:50%; width:300px; height:300px; background:#fff; top:55%; right:15%; filter: blur(40px); opacity: 0.3; animation: float 8s ease-in-out infinite; animation-delay: 3s;"></div>
+    <div style="position:absolute; border-radius:50%; width:250px; height:250px; background:#fff; top:30%; right:35%; filter: blur(40px); opacity: 0.3; animation: float 8s ease-in-out infinite; animation-delay: 6s;"></div>
+  </div>
+
+  <header>
+    <h1>Arrowverse</h1>
+    <nav aria-label="Primary navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html" aria-current="page">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main role="main" tabindex="-1">
+    <h2>About Our Company</h2>
+    <p>At Arrowverse, we are passionate about connecting brands with their audience through innovative and impactful digital marketing strategies. Our team of dedicated professionals combines creativity, analytics, and technology to deliver results that matter.</p>
+    <p>Founded in 2010, our mission has always been to empower businesses—large and small—by elevating their digital presence and fostering lasting connections through effective marketing campaigns.</p>
+    
+    <h3>Our Core Values</h3>
+    <ul>
+      <li><strong>Innovation:</strong> We constantly embrace new technologies and ideas to stay ahead in the digital marketing landscape.</li>
+      <li><strong>Integrity:</strong> Transparency and honesty guide all our client relationships and business practices.</li>
+      <li><strong>Collaboration:</strong> We believe teamwork within our company and with clients leads to exceptional results.</li>
+      <li><strong>Customer Focus:</strong> Delivering tailored strategies that align with each client's unique goals is our priority.</li>
+    </ul>
+
+    <h3>Milestones & History</h3>
+    <ul>
+      <li>2010: Company founded by industry veterans in digital marketing.</li>
+      <li>2013: Expanded services to include social media management and PPC campaigns.</li>
+      <li>2017: Reached 100+ satisfied clients worldwide.</li>
+      <li>2022: Launched proprietary analytics platform to improve campaign insights.</li>
+    </ul>
+    
+    <h3>Our Vision</h3>
+    <p>To be a global leader in digital marketing by continuously pushing boundaries and creating meaningful connections between brands and their customers.</p>
+
+    <img class="team-photo" src="https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&h=350" alt="Our creative digital marketing team collaborating" loading="lazy" />
+  </main>
+
+  <footer role="contentinfo">
+    &copy; <span id="year"></span> Our Digital Marketing Company. All rights reserved.
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  /* Animate shapes for About page */
+  const floatAnim = `
+    @keyframes float {
+      0%, 100% { transform: translateY(0) translateX(0); }
+      50% { transform: translateY(-25px) translateX(25px); }
+    }
+  `;
+
+  const styleSheet = document.createElement("style");
+  styleSheet.type = "text/css";
+  styleSheet.innerText = floatAnim;
+  document.head.appendChild(styleSheet);
+</script>
+</body>
+</html>
